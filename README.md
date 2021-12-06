@@ -17,5 +17,4 @@ Description:  We will develop database of footwear retail data from one or multi
 Sources:
 •	Kaggle
 •	API from www.shop.com 
-•	www.nike.com 
-![image](https://user-images.githubusercontent.com/88601907/144928220-91ee41a7-c138-45f1-932d-584f693d2ce3.png)
+•	www.nike.com
