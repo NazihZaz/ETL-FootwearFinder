@@ -1,7 +1,7 @@
-CREATE TABLE shopcom (
+CREATE TABLE shoes (
 	id serial primary key,
 	"Name" varchar (255),
-	"Price" float,
 	"Gender" varchar (10),
+	"Price" float,
 	"URL" varchar (255)
 );
