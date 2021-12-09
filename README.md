@@ -39,7 +39,7 @@ Develop a database of footwear retail data from one or multiple sources listed b
 
 	a) Create a database named FootwearFinder_db using pgAdmin 4.
 
-	b) Create a table named ["shopcom"](https://github.com/epurwant0/Project2-ETL-FootwearFinder/blob/main/schema.sql).
+	b) Create a table named ["shoes"](https://github.com/epurwant0/Project2-ETL-FootwearFinder/blob/main/schema.sql).
 
 	c) Import csv files to our 3rd [Jupyter Notebook](https://github.com/epurwant0/Project2-ETL-FootwearFinder/blob/main/SCAthletic_etl.ipynb), turn them into Pandas data frames, create a connection to the database, load both data frames, and laslty make a query to confirm that everything was loaded.
 
