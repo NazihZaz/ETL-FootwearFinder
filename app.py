@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from config import USERNAME, PASSWORD
 
 # Import our psycopg2 library, which lets us connect our Flask app to our Postgres database.
 import sqlalchemy
@@ -7,10 +8,10 @@ import sqlalchemy
 app = Flask(__name__)
 
 # Create connection variable
-conn = 'postgresql://postgres:Payrol662!@localhost:5433/FootwearFinderDB'
+connection_string = f"{USERNAME}:{PASSWORD}@localhost:5433/FootwearFinderDB"
 
 # Pass connection url to the sqlalchemy create_engine method
-engine = sqlalchemy.create_engine(conn)
+engine = sqlalchemy.create_engine(f'postgresql://{connection_string}')
 
 # Connection to a database was done during the instantiation of the 
 # engine above and database MUST exist.
