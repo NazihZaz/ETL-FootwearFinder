@@ -7,7 +7,7 @@ import sqlalchemy
 app = Flask(__name__)
 
 # Create connection variable
-conn = 'postgresql://postgres:Payrol662!@localhost:5433/FootwearFinder_db'
+conn = 'postgresql://postgres:Payrol662!@localhost:5433/FootwearFinderDB'
 
 # Pass connection url to the sqlalchemy create_engine method
 engine = sqlalchemy.create_engine(conn)
@@ -37,10 +37,10 @@ engine = sqlalchemy.create_engine(conn)
 @app.route('/')
 def index():
     # Store the entire footwear collection in a list
-    shopcom = engine.execute("SELECT * FROM shopcom")
+    shoes = engine.execute("SELECT * FROM shoes")
 
     # Return the template with the footwear list passed in
-    return render_template('index.html', shopcom=shopcom)
+    return render_template('index.html', shoes=shoes)
 
 
 if __name__ == "__main__":
