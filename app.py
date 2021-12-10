@@ -13,27 +13,6 @@ connection_string = f"{USERNAME}:{PASSWORD}@localhost:5433/FootwearFinderDB"
 # Pass connection url to the sqlalchemy create_engine method
 engine = sqlalchemy.create_engine(f'postgresql://{connection_string}')
 
-# Connection to a database was done during the instantiation of the 
-# engine above and database MUST exist.
-
-# Drops collection if available to remove duplicates
-# engine.execute("DROP TABLE IF EXISTS team;")
-
-# # Create the table "team" within team_db 
-# engine.execute('''
-# CREATE TABLE team (
-#   id SERIAL PRIMARY KEY,
-#   player VARCHAR(30) NOT NULL,
-#   position VARCHAR(30)
-# )''')
-
-# # Insert two rows into the table
-# engine.execute('''
-# INSERT INTO team (player, position)
-# VALUES ('Jessica', 'Point Guard'),
-#   ('Mark', 'Center')''')
-
-
 # Set route
 @app.route('/')
 def index():
